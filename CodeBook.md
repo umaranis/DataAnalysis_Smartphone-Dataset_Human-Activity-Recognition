@@ -58,8 +58,10 @@ The complete list of variables of tidy dataset is given below:
 | tBodyAcc-mean()-Z  | Average of variable by subject and activity
 | tBodyAcc-std()-X   | Average of variable by subject and activity
 | tBodyAcc-std()-Y   | Average of variable by subject and activity
-"tBodyAcc-std()-Z"                "tGravityAcc-mean()-X"           
-[10] "tGravityAcc-mean()-Y"            "tGravityAcc-mean()-Z"            "tGravityAcc-std()-X"            
+| tBodyAcc-std()-Z   | Average of variable by subject and activity
+| tGravityAcc-mean()-X  | Average of variable by subject and activity
+| tGravityAcc-mean()-Y  | Average of variable by subject and activity
+"tGravityAcc-mean()-Z"            "tGravityAcc-std()-X"            
 [13] "tGravityAcc-std()-Y"             "tGravityAcc-std()-Z"             "tBodyAccJerk-mean()-X"          
 [16] "tBodyAccJerk-mean()-Y"           "tBodyAccJerk-mean()-Z"           "tBodyAccJerk-std()-X"           
 [19] "tBodyAccJerk-std()-Y"            "tBodyAccJerk-std()-Z"            "tBodyGyro-mean()-X"             

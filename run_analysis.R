@@ -43,7 +43,7 @@ get_detailed_dataset <- function() {
   
   ## 2) Extracts only the measurements on the mean and standard deviation for each measurement. 
   
-  filter <- sapply(features$V2, grepl, pattern = "mean\\(\\)|std\\(\\)")
+  filter <- sapply(features$V2, grepl, pattern = "mean|std")
   
   # add TRUE for subject and activity
   filter <- c(TRUE, TRUE, filter)
