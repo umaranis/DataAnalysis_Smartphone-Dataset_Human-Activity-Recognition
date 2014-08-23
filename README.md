@@ -20,7 +20,7 @@ Following cleaning and analysis is performed on the dataset in the below order.
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### How to use script file (run_analysis) to repeat the above 5 steps
+### How to use script file (run_analysis.R) to repeat the above 5 steps
 * Download the samsung smartphone dataset from the link provided above
 * Extract the dataset in the working directory
 * run_analysis.R contains 3 functions:
