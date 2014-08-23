@@ -52,7 +52,7 @@ The complete list of variables of tidy dataset is given below:
 | Variable           | Description
 |--------------------|-----------------------
 | subject            | People who participated in the experiment, labelled from 1 to 30.
-| activity           | Six activities performed by the subject while measurements were taken. Activities are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+| activity           | Six activities performed by subjects while measurements were taken. Activities are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 | tBodyAcc-mean()-X  | Average of variable by subject and activity
 | tBodyAcc-mean()-Y  | Average of variable by subject and activity
 | tBodyAcc-mean()-Z  | Average of variable by subject and activity
