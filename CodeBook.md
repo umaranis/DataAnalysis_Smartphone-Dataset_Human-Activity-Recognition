@@ -6,7 +6,7 @@ The features selected for this database come from the accelerometer and gyroscop
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-Then, a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
+Finally, a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -45,7 +45,7 @@ tBodyGyroJerkMean
 
 ### Tidy Dataset
 
-Finally, the average of each variable is calculated for each activity and each subject.
+For tidy dataset, the average of each variable is calculated for each activity and each subject.
 
 The complete list of variables of tidy dataset is given below:
 
@@ -61,27 +61,74 @@ The complete list of variables of tidy dataset is given below:
 | tBodyAcc-std()-Z   | Average of variable by subject and activity
 | tGravityAcc-mean()-X  | Average of variable by subject and activity
 | tGravityAcc-mean()-Y  | Average of variable by subject and activity
-"tGravityAcc-mean()-Z"            "tGravityAcc-std()-X"            
-[13] "tGravityAcc-std()-Y"             "tGravityAcc-std()-Z"             "tBodyAccJerk-mean()-X"          
-[16] "tBodyAccJerk-mean()-Y"           "tBodyAccJerk-mean()-Z"           "tBodyAccJerk-std()-X"           
-[19] "tBodyAccJerk-std()-Y"            "tBodyAccJerk-std()-Z"            "tBodyGyro-mean()-X"             
-[22] "tBodyGyro-mean()-Y"              "tBodyGyro-mean()-Z"              "tBodyGyro-std()-X"              
-[25] "tBodyGyro-std()-Y"               "tBodyGyro-std()-Z"               "tBodyGyroJerk-mean()-X"         
-[28] "tBodyGyroJerk-mean()-Y"          "tBodyGyroJerk-mean()-Z"          "tBodyGyroJerk-std()-X"          
-[31] "tBodyGyroJerk-std()-Y"           "tBodyGyroJerk-std()-Z"           "tBodyAccMag-mean()"             
-[34] "tBodyAccMag-std()"               "tGravityAccMag-mean()"           "tGravityAccMag-std()"           
-[37] "tBodyAccJerkMag-mean()"          "tBodyAccJerkMag-std()"           "tBodyGyroMag-mean()"            
-[40] "tBodyGyroMag-std()"              "tBodyGyroJerkMag-mean()"         "tBodyGyroJerkMag-std()"         
-[43] "fBodyAcc-mean()-X"               "fBodyAcc-mean()-Y"               "fBodyAcc-mean()-Z"              
-[46] "fBodyAcc-std()-X"                "fBodyAcc-std()-Y"                "fBodyAcc-std()-Z"               
-[49] "fBodyAcc-meanFreq()-X"           "fBodyAcc-meanFreq()-Y"           "fBodyAcc-meanFreq()-Z"          
-[52] "fBodyAccJerk-mean()-X"           "fBodyAccJerk-mean()-Y"           "fBodyAccJerk-mean()-Z"          
-[55] "fBodyAccJerk-std()-X"            "fBodyAccJerk-std()-Y"            "fBodyAccJerk-std()-Z"           
-[58] "fBodyAccJerk-meanFreq()-X"       "fBodyAccJerk-meanFreq()-Y"       "fBodyAccJerk-meanFreq()-Z"      
-[61] "fBodyGyro-mean()-X"              "fBodyGyro-mean()-Y"              "fBodyGyro-mean()-Z"             
-[64] "fBodyGyro-std()-X"               "fBodyGyro-std()-Y"               "fBodyGyro-std()-Z"              
-[67] "fBodyGyro-meanFreq()-X"          "fBodyGyro-meanFreq()-Y"          "fBodyGyro-meanFreq()-Z"         
-[70] "fBodyAccMag-mean()"              "fBodyAccMag-std()"               "fBodyAccMag-meanFreq()"         
-[73] "fBodyBodyAccJerkMag-mean()"      "fBodyBodyAccJerkMag-std()"       "fBodyBodyAccJerkMag-meanFreq()" 
-[76] "fBodyBodyGyroMag-mean()"         "fBodyBodyGyroMag-std()"          "fBodyBodyGyroMag-meanFreq()"    
-[79] "fBodyBodyGyroJerkMag-mean()"     "fBodyBodyGyroJerkMag-std()"      "fBodyBodyGyroJerkMag-meanFreq()
+| tGravityAcc-mean()-Z  | Average of variable by subject and activity
+| tGravityAcc-std()-X   | Average of variable by subject and activity
+| tGravityAcc-std()-Y   | Average of variable by subject and activity
+| tGravityAcc-std()-Z   | Average of variable by subject and activity
+| tBodyAccJerk-mean()-X | Average of variable by subject and activity
+| tBodyAccJerk-mean()-Y | Average of variable by subject and activity
+| tBodyAccJerk-mean()-Z | Average of variable by subject and activity
+| tBodyAccJerk-std()-X  | Average of variable by subject and activity
+| tBodyAccJerk-std()-Y  | Average of variable by subject and activity
+| tBodyAccJerk-std()-Z  | Average of variable by subject and activity
+| tBodyGyro-mean()-X    | Average of variable by subject and activity
+| tBodyGyro-mean()-Y    | Average of variable by subject and activity
+| tBodyGyro-mean()-Z    | Average of variable by subject and activity
+| tBodyGyro-std()-X     | Average of variable by subject and activity
+| tBodyGyro-std()-Y     | Average of variable by subject and activity
+| tBodyGyro-std()-Z     | Average of variable by subject and activity
+| tBodyGyroJerk-mean()-X  | Average of variable by subject and activity
+| tBodyGyroJerk-mean()-Y  | Average of variable by subject and activity
+| tBodyGyroJerk-mean()-Z  | Average of variable by subject and activity
+| tBodyGyroJerk-std()-X   | Average of variable by subject and activity
+| tBodyGyroJerk-std()-Y   | Average of variable by subject and activity
+| tBodyGyroJerk-std()-Z   | Average of variable by subject and activity
+| tBodyAccMag-mean()      | Average of variable by subject and activity
+| tBodyAccMag-std()       | Average of variable by subject and activity
+| tGravityAccMag-mean()   | Average of variable by subject and activity
+| tGravityAccMag-std()    | Average of variable by subject and activity
+| tBodyAccJerkMag-mean()  | Average of variable by subject and activity
+| tBodyAccJerkMag-std()   | Average of variable by subject and activity
+| tBodyGyroMag-mean()     | Average of variable by subject and activity
+| tBodyGyroMag-std()      | Average of variable by subject and activity
+| tBodyGyroJerkMag-mean() | Average of variable by subject and activity
+| tBodyGyroJerkMag-std()  | Average of variable by subject and activity
+| fBodyAcc-mean()-X       | Average of variable by subject and activity
+| fBodyAcc-mean()-Y       | Average of variable by subject and activity
+| fBodyAcc-mean()-Z       | Average of variable by subject and activity
+| fBodyAcc-std()-X        | Average of variable by subject and activity
+| fBodyAcc-std()-Y        | Average of variable by subject and activity
+| fBodyAcc-std()-Z        | Average of variable by subject and activity
+| fBodyAcc-meanFreq()-X   | Average of variable by subject and activity
+| fBodyAcc-meanFreq()-Y   | Average of variable by subject and activity
+| fBodyAcc-meanFreq()-Z   | Average of variable by subject and activity
+| fBodyAccJerk-mean()-X   | Average of variable by subject and activity
+| fBodyAccJerk-mean()-Y   | Average of variable by subject and activity
+| fBodyAccJerk-mean()-Z   | Average of variable by subject and activity
+| fBodyAccJerk-std()-X    | Average of variable by subject and activity
+| fBodyAccJerk-std()-Y    | Average of variable by subject and activity
+| fBodyAccJerk-std()-Z    | Average of variable by subject and activity
+| fBodyAccJerk-meanFreq()-X  | Average of variable by subject and activity
+| fBodyAccJerk-meanFreq()-Y  | Average of variable by subject and activity
+| fBodyAccJerk-meanFreq()-Z  | Average of variable by subject and activity
+| fBodyGyro-mean()-X         | Average of variable by subject and activity
+| fBodyGyro-mean()-Y         | Average of variable by subject and activity
+| fBodyGyro-mean()-Z         | Average of variable by subject and activity
+| fBodyGyro-std()-X          | Average of variable by subject and activity
+| fBodyGyro-std()-Y          | Average of variable by subject and activity
+| fBodyGyro-std()-Z          | Average of variable by subject and activity
+| fBodyGyro-meanFreq()-X     | Average of variable by subject and activity
+| fBodyGyro-meanFreq()-Y     | Average of variable by subject and activity
+| fBodyGyro-meanFreq()-Z     | Average of variable by subject and activity
+| fBodyAccMag-mean()         | Average of variable by subject and activity
+| fBodyAccMag-std()          | Average of variable by subject and activity
+| fBodyAccMag-meanFreq()     | Average of variable by subject and activity
+| fBodyBodyAccJerkMag-mean() | Average of variable by subject and activity
+| fBodyBodyAccJerkMag-std()  | Average of variable by subject and activity
+| fBodyBodyAccJerkMag-meanFreq()   | Average of variable by subject and activity
+| fBodyBodyGyroMag-mean()    | Average of variable by subject and activity
+| fBodyBodyGyroMag-std()     | Average of variable by subject and activity
+| fBodyBodyGyroMag-meanFreq() | Average of variable by subject and activity
+| fBodyBodyGyroJerkMag-mean() | Average of variable by subject and activity
+| fBodyBodyGyroJerkMag-std()  | Average of variable by subject and activity
+| fBodyBodyGyroJerkMag-meanFreq()  | Average of variable by subject and activity
