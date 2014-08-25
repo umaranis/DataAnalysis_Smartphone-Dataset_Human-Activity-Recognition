@@ -1,4 +1,4 @@
-## Code Book for Summarized Tidy Dataset produced from 'Accelerometer and Gyroscope dataset collected using Samsumg Smartphones' 
+## Code Book for Summarized Tidy Dataset produced from Accelerometer and Gyroscope dataset collected using Samsumg Smartphones
 
 ### Feature Selection 
 
